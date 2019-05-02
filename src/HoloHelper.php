@@ -2,8 +2,6 @@
 
 namespace Holonaut\HoloHelper;
 
-use Illuminate\Support\Facades\Cache;
-
 class HoloHelper
 {
 	// see HoloHelper::getFormFile to see what kind of $file is expected as input
