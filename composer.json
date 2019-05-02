@@ -1,0 +1,18 @@
+{
+    "name": "holonaut/holo-helper",
+    "description": "Helper class for Laravel projects",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "William Raendchen",
+            "email": "holonistaux@gmail.com"
+        }
+    ],
+	"autoload": {
+        "psr-4": {
+            "Holonaut\\HoloHelper\\": "src/"
+        }
+    },
+	"minimum-stability": "stable"
+}
