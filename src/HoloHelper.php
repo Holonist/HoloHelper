@@ -78,8 +78,12 @@ class HoloHelper
 		return file($_FILES[$formId]['tmp_name'][$fileName], FILE_SKIP_EMPTY_LINES);
 	}
 
-	public static function contains($haystack, $needle) {
-		if (strpos($haystack, $needle) !== false) return true;
+	public static function contains(string $haystack, string $needle, $caseSensitive = false) {
+		$needle = $caseSensitive ? $needle : strtolower($needle);
+
+		if (strpos($haystack, $needle) !== false) {
+			return true;
+		}
 		return false;
 	}
 }
