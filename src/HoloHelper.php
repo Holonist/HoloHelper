@@ -79,7 +79,10 @@ class HoloHelper
 	}
 
 	public static function contains(string $haystack, string $needle, $caseSensitive = false) {
-		$needle = $caseSensitive ? $needle : strtolower($needle);
+		if(!$caseSensitive) {
+			$haystack = strtolower($haystack);
+			$needle = strtolower($needle);
+		}
 
 		if (strpos($haystack, $needle) !== false) {
 			return true;
